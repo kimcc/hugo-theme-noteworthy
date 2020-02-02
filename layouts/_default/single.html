@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1 class="post-title">{{ .Title }}</h1>
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    <div>
+        <p>
+        {{ .Content }}
+        </p>
+    </div>
+    {{ template "_internal/disqus.html" . }}
+
+    <div class="page-footer">
+    {{ $taxonomy := "tags" }}
+    {{ with .Param $taxonomy }}
+        <hr class="footer-divider">
+        {{ range $index, $tag := . }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) }}
+            <a class="tag" href="{{ .Permalink }}">#{{ $tag | urlize }}</a>
+        {{ end }}
+        {{ end }}
+    {{ end }}
+    </div>
+
+{{end}}

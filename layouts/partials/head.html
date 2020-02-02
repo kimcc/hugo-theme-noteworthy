@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>{{ .Site.Title }}</title>
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="manifest" href="{{ "manifest.json" | relURL }}">
+    <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <!-- Use Hugo Pipes to process the Sass file (convert to CSS, minify, and add a hash) -->
+    {{ $main_style := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
+
+    <!-- Uncomment to add custom styles -->
+    <!-- Modify the custom.scss file inside assets > css to use scss -->
+    <!-- {{ $custom_style := resources.Get "css/custom.scss" | toCSS | minify | fingerprint }} 
+    <link rel="stylesheet" href="{{ $custom_style.Permalink }}"/> -->
+
+    <!-- Modify the custom.css file inside static > css to use vanilla css -->
+    <!-- <link type="text/css" rel="stylesheet" href="{{ "/" | relURL }}css/custom.css"> -->
+ 
+    {{ with .OutputFormats.Get "RSS" }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
+    {{ template "_internal/google_analytics.html" . }}
+</head>

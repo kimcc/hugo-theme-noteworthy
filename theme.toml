@@ -1,0 +1,12 @@
+name = "Noteworthy"
+license = "MIT"
+licenselink = "https://github.com/kimcc/hugo-theme-noteworthy/blob/master/LICENSE.md"
+description = "A minimalist Hugo theme for writers and bloggers."
+homepage = "https://github.com/kimcc/hugo-theme-noteworthy"
+tags = ["blog", "minimalist", "minimal", "clean", "simple", "responsive", "light"]
+features = ["blog", "responsive", "social media"]
+min_version = "0.55.2"
+
+[author]
+    name = "kimcc"
+    homepage = "https://github.com/kimcc"

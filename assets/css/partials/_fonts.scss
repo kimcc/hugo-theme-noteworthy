@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Noto Sans;
+    src: url(../fonts/NotoSans-Regular.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url(../fonts/NotoSans-Regular.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: 400;
+    font-display: fallback;
+  }
+
+@font-face {
+    font-family: Noto Sans;
+    src: url(../fonts/NotoSans-Italic.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url(../fonts/NotoSans-Italic.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: 400;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Noto Serif;
+    src: url(../fonts/NotoSerif-SemiBold.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url(../fonts/NotoSerif-SemiBold.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: 600;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Noto Serif;
+    src: url(../fonts/NotoSerif-Bold.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url(../fonts/NotoSerif-Bold.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: 700;
+    font-display: fallback;
+}

@@ -1,0 +1,9 @@
+h1 {
+  color: #fff; }
+
+.container {
+  display: grid;
+  grid-template-columns: 8em auto; }
+
+nav {
+  grid-column: 1; }

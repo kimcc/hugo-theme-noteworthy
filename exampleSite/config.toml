@@ -1,0 +1,95 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Noteworthy"
+theme = "noteworthy"
+enableRobotsTXT = true
+paginate = 4 # Set the number of posts to show before overflowing to the next page.
+summaryLength = 10 # Configure how long the post summary should be on the homepage.
+disableKinds = ["taxonomyTerm"]
+
+[author]
+	name = "kimcc"
+
+[params]
+	math = true
+	# Blog description at the top of the homepage. Supports markdown.
+	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
+
+	# Add links to your accounts. Remove the ones you don't want to include.
+	# Main
+	email = ""
+    facebook = ""
+    twitter = ""
+	instagram = ""
+	tumblr = ""
+	reddit = ""
+	pinterest = ""
+	youtube = ""
+	weibo = ""
+	vk = ""
+	linkedin = ""
+
+	# Writing
+    medium = ""
+	blogger = ""
+	wordpress = ""
+
+	# Creative & Visual
+    dribbble = ""
+	behance = ""
+	deviantart = ""
+	flickr = ""
+
+	# Programming
+    github = ""
+	stackoverflow = ""
+	gitlab = ""
+	codepen = ""
+
+# Add your Disqus shortname here.
+disqusShortname = ""      
+
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+googleAnalytics = "" 
+
+# Menu links along the sidebar navigation.
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about/"
+	weight = 1 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
+
+[[menu.main]]
+	identifier = "tags"
+	name = "Tags"
+	url = "/tags/"
+	weight = 2
+
+[[menu.main]]
+	name = "Archives"
+	identifier = "archives"
+	url = "/archives/"
+	weight = 3
+
+# Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

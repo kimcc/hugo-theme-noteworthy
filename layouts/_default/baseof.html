@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- Default base template. Other templates define the "main" portion in this template -->
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "nav.html" . }}
+        <div id="content" class="content-container">
+        {{ block "main" . }}
+        {{ end }}
+        {{ partial "math.html" . }}
+        </div>
+        {{ partial "footer-mobile.html" . }}
+    </body>
+</html>

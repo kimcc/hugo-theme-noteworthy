@@ -1,0 +1,1 @@
+window.onload=wrapTable();function wrapTable(){const tables=document.querySelectorAll('table');tables.forEach((table)=>{const tableWrapper=document.createElement('div');tableWrapper.className='table-wrapper';table.parentElement.replaceChild(tableWrapper,table);tableWrapper.appendChild(table);});};

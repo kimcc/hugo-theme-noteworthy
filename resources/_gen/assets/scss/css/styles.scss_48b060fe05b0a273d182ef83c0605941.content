@@ -1,0 +1,1 @@
+.container{display:grid;grid-template-columns:15em 1fr;grid-column-gap:32px}nav{grid-column:1}p{line-height:140%}.nav-link{display:block;color:#63bda2}.article-container{max-width:680px}.paginator{display:flex;justify-content:space-between}.post-footer{padding-top:1em}
