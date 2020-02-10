@@ -34,34 +34,34 @@ In the `params` section of the `config.toml` file, you can add links to your soc
 
 ```
 # Main
-email = ""
-facebook = ""
-twitter = ""
-instagram = ""
-tumblr = ""
-reddit = ""
-pinterest = ""
-youtube = ""
-weibo = ""
-vk = ""
-linkedin = ""
+email = "#"
+facebook = "#"
+twitter = "#"
+instagram = "#"
+tumblr = "#"
+reddit = "#"
+pinterest = "#"
+youtube = "#"
+weibo = "#"
+vk = "#"
+linkedin = "#"
 
 # Writing
-medium = ""
-blogger = ""
-wordpress = ""
+medium = "#"
+blogger = "#"
+wordpress = "#"
 
 # Creative & Visual
-dribbble = ""
-behance = ""
-deviantart = ""
-flickr = ""
+dribbble = "#"
+behance = "#"
+deviantart = "#"
+flickr = "#"
 
 # Programming
-github = ""
-stackoverflow = ""
-gitlab = ""
-codepen = ""
+github = "#"
+stackoverflow = "#"
+gitlab = "#"
+codepen = "#"
 ```
 
 
