@@ -18,13 +18,10 @@
             <div class="post-footer">
             <time>{{ .Date.Format "January 2, 2006" }}</time>
 
-             <!-- Display tags -->
-            {{ $taxonomy := "tags" }}
-            {{ with .Param $taxonomy }}
-                {{ range $index, $tag := . }}
-                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) }}
-                    <a class="tag" href="{{ .Permalink }}">#{{ $tag | urlize }}</a>
-                {{ end }}
+            <!-- Display tags -->
+            {{if .Params.tags}}
+                {{ range .Params.tags }}
+                    <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
                 {{ end }}
             {{ end }}
             </div> 

@@ -5,7 +5,9 @@ theme = "noteworthy"
 enableRobotsTXT = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
-disableKinds = ["taxonomyTerm"]
+
+[taxonomies]
+  tag = "tags"
 
 [author]
 	name = "kimcc"
@@ -17,34 +19,34 @@ disableKinds = ["taxonomyTerm"]
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
-	email = ""
-    facebook = ""
-    twitter = ""
-	instagram = ""
-	tumblr = ""
-	reddit = ""
-	pinterest = ""
-	youtube = ""
-	weibo = ""
-	vk = ""
-	linkedin = ""
+	email = "#"
+    facebook = "#"
+    twitter = "#"
+	instagram = "#"
+	tumblr = "#"
+	reddit = "#"
+	pinterest = "#"
+	youtube = "#"
+	weibo = "#"
+	vk = "#"
+	linkedin = "#"
 
 	# Writing
-    medium = ""
-	blogger = ""
-	wordpress = ""
+    medium = "#"
+	blogger = "#"
+	wordpress = "#"
 
 	# Creative & Visual
-    dribbble = ""
-	behance = ""
-	deviantart = ""
-	flickr = ""
+    dribbble = "#"
+	behance = "#"
+	deviantart = "#"
+	flickr = "#"
 
 	# Programming
-    github = ""
-	stackoverflow = ""
-	gitlab = ""
-	codepen = ""
+    github = "#"
+	stackoverflow = "#"
+	gitlab = "#"
+	codepen = "#"
 
 # Add your Disqus shortname here.
 disqusShortname = ""      

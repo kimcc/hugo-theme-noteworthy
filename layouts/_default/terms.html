@@ -2,9 +2,10 @@
 <!-- Shows all of the site's tags -->
 <h1>Tags</h1>
 <ul>
-{{ range .Site.Taxonomies.tags }}
+    {{ range .Data.Terms.Alphabetical }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-{{ end }}
+    {{ end }}
 </ul>
+
 <div class="page-footer"></div>
 {{end}}

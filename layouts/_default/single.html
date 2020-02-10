@@ -9,15 +9,12 @@
     {{ template "_internal/disqus.html" . }}
 
     <div class="page-footer">
-    {{ $taxonomy := "tags" }}
-    {{ with .Param $taxonomy }}
         <hr class="footer-divider">
-        {{ range $index, $tag := . }}
-        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) }}
-            <a class="tag" href="{{ .Permalink }}">#{{ $tag | urlize }}</a>
+        {{if .Params.tags}}
+        {{ range .Params.tags }}
+            <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
         {{ end }}
-        {{ end }}
-    {{ end }}
+      {{ end }}
     </div>
 
 {{end}}
