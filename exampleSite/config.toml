@@ -12,6 +12,10 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 [author]
 	name = "kimcc"
 
+# Set to false to disallow raw HTML in markdown files
+[markup.goldmark.renderer]
+    unsafe = true
+
 [params]
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
