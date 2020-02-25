@@ -9,8 +9,8 @@
     {{ template "_internal/disqus.html" . }}
 
     <div class="page-footer">
-        <hr class="footer-divider">
         {{if .Params.tags}}
+        <hr class="footer-divider">
         {{ range .Params.tags }}
             <a class="tag" href="/tags/{{ . | urlize }}">#{{.}}</a>
         {{ end }}
