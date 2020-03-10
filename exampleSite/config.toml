@@ -60,7 +60,7 @@ disqusShortname = ""
 	codepen = "#"
 
     # Academic
-    google-scholar = "#"
+    googlescholar = "#"
     impactstory = "#"
     orcid = "#"  
 
