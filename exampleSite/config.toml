@@ -6,6 +6,12 @@ enableRobotsTXT = true
 paginate = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
 
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+googleAnalytics = "" 
+
+# Add your Disqus shortname here.
+disqusShortname = ""    
+
 [taxonomies]
   tag = "tags"
 
@@ -31,6 +37,7 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 	reddit = "#"
 	pinterest = "#"
 	youtube = "#"
+    vimeo = "#"
 	weibo = "#"
 	vk = "#"
 	linkedin = "#"
@@ -52,11 +59,10 @@ summaryLength = 10 # Configure how long the post summary should be on the homepa
 	gitlab = "#"
 	codepen = "#"
 
-# Add your Disqus shortname here.
-disqusShortname = ""      
-
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = "" 
+    # Academic
+    google-scholar = "#"
+    impactstory = "#"
+    orcid = "#"  
 
 # Menu links along the sidebar navigation.
 [[menu.main]]
