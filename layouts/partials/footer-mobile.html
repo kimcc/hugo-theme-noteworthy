@@ -8,5 +8,5 @@
 	</div>
 
 	{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
-	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }}></script>
+	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 </footer>
