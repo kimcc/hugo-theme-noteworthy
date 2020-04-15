@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <h1 class="post-title">{{ .Title }}</h1>
     {{ if .Date }}
     <time>{{ .Date.Format "January 2, 2006" }}</time>
@@ -9,6 +10,17 @@
         </p>
     </div>
     {{ template "_internal/disqus.html" . }}
+
+    {{ if .Site.Params.enableKofi }}
+
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type='text/javascript'>
+            const kofiId = '{{ .Site.Params.Kofi }}';
+            kofiwidget2.init('Support Me on Ko-fi', '#29abe0', kofiId);
+            kofiwidget2.draw();
+        </script> 
+
+    {{ end }}
 
     <div class="page-footer">
         {{if .Params.tags}}

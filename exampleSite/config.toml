@@ -27,6 +27,10 @@ disqusShortname = ""
 	# Blog description at the top of the homepage. Supports markdown.
 	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
 
+    # Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
+    enableKofi = false
+    kofi = ""
+
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
 	email = "#"
