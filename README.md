@@ -9,6 +9,7 @@ Noteworthy is a minimalist Hugo theme for writers and bloggers.
 
 * Fully responsive
 * Google Analytics and Disqus integration
+* Ko-fi donation button
 * Syntax highlighting
 * Mathematical notations with KaTex
 * About, Tags, and Archives pages
@@ -38,7 +39,7 @@ my-new-post
 - image2.png
 ```
 
-Then, you can add an image within your Markdown file by using the shortcode like thist:
+Then, you can add an image within your Markdown file by using the shortcode like this:
 
 ```
 {{< resize-image src="image1.jpg" alt="My first image" >}}
@@ -49,6 +50,10 @@ Add captions like this:
 ```
 {{< resize-image src="image2.png" alt="My second image" caption="My caption" >}}
 ```
+
+## Read more link for posts
+
+Set `showReadMore = false` to `true` in the config file to have a "read more" link show up when posts are truncated.
 
 ## Social media accounts
 
@@ -64,6 +69,7 @@ tumblr = "#"
 reddit = "#"
 pinterest = "#"
 youtube = "#"
+vimeo = "#"
 weibo = "#"
 vk = "#"
 linkedin = "#"
@@ -79,11 +85,19 @@ behance = "#"
 deviantart = "#"
 flickr = "#"
 
+# Audio & Music
+soundcloud = "#"
+
 # Programming
 github = "#"
 stackoverflow = "#"
 gitlab = "#"
 codepen = "#"
+
+# Academic
+googlescholar = "#"
+impactstory = "#"
+orcid = "#"  
 ```
 
 
@@ -104,8 +118,7 @@ googleAnalytics = ""
 If you'd like to enable a Ko-fi button on your posts, enable it in the config file and add your identifier.
 
 ```
-# Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi
-ID to link to your account.
+# Set enableKofi to true to enable the Ko-fi support button. Add your Ko-fi ID to link to your account.
 enableKofi = true
 kofi = ""
 ```
