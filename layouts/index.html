@@ -41,7 +41,7 @@
         <p>Page {{ $paginator.PageNumber}} of {{ $paginator.TotalPages }}</p>
         <div class="paginator-group">
             {{ if $paginator.HasPrev }}
-            <a class="color-link" href="{{ $paginator.Prev.URL | relLangURL }}">
+            <a class="color-link" href="{{ $paginator.Prev.URL }}">
                     <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
                         <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
                             <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
@@ -52,7 +52,7 @@
             </a>
             {{ end }}
             {{ if $paginator.HasNext }}
-                <a class="color-link older" href="{{ $paginator.Next.URL | relLangURL }}">
+                <a class="color-link older" href="{{ $paginator.Next.URL }}">
                     Older
                     <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
                             <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
