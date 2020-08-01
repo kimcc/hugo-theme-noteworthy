@@ -5,7 +5,9 @@
   {{ range .Site.Menus.main }}
     <a class="color-link nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
   {{ end }}
-  <a class="color-link nav-link" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+  {{ if not ( and (isset .Site.Params "rssicon") (.Site.Params.RSSIcon) ) }}
+    <a class="color-link nav-link" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+  {{ end }}
 </div>
 {{ partial "footer.html" . }}
 </nav>

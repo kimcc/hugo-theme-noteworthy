@@ -218,6 +218,15 @@
     </a>
     {{ end }}
 
+    {{ if and (isset .Site.Params "rssicon") (.Site.Params.RSSIcon) }}
+    <a class="social-icon" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" title="RSS" type="application/rss+xml">
+        <!-- RSS icon by https://uxwing.com/rss-square-icon/ -->
+        <svg width="28px" height="28px" viewBox="0 0 640 640" version="1.1" fill="#ABABAB" xxmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M579.999 0H60C27 0 0 27 0 60v520c0 33 27 60 60 60h519.999c33 0 60-27 60-60V60c0-33-27-60-60-60zM174.368 519.514c-30 0-54.367-24.118-54.367-54.119 0-29.776 24.355-54.248 54.367-54.248 30.119 0 54.367 24.52 54.367 54.248 0 29.989-24.355 54.119-54.367 54.119zm136.513.484c0-51.118-19.878-99.237-55.879-135.25-36.118-36.118-83.989-55.997-135.002-55.997v-78.237c148.525 0 269.531 120.887 269.531 269.484h-78.65zm138.876 0c0-181.892-147.888-330.004-329.638-330.004v-78.237c225.003 0 408.123 183.25 408.123 408.241H449.71h.047z"/>
+        </svg>
+    </a>
+    {{ end }}
+
 </div>
 
 

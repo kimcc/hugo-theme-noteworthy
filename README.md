@@ -113,6 +113,14 @@ disqusShortname = ""
 googleAnalytics = "" 
 ```
 
+## Use an RSS icon
+
+By default, Noteworthy will display an RSS feed link in text in the navigation menu. You may configure your site to instead include the RSS feed link as an icon in the social icons by setting `rssicon` to true in the `params` section of the `config.toml` file.
+
+```
+rssicon = true
+```
+
 ## Ko-fi donation button
 
 If you'd like to enable a Ko-fi button on your posts, enable it in the config file and add your identifier.
