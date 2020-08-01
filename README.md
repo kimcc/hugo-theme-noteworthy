@@ -98,6 +98,9 @@ codepen = "#"
 googlescholar = "#"
 impactstory = "#"
 orcid = "#"  
+
+# Travel
+googlemaps = "#"
 ```
 
 

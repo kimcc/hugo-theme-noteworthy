@@ -73,6 +73,9 @@ disqusShortname = ""
     impactstory = "#"
     orcid = "#"  
 
+    # Travel
+    googlemaps = "#"
+
 # Menu links along the sidebar navigation.
 [[menu.main]]
 	identifier = "about"
