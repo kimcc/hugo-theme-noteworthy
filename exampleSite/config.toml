@@ -75,6 +75,7 @@ disqusShortname = ""
 
     # Travel
     googlemaps = "#"
+    tripadvisor = "#"
 
 # Menu links along the sidebar navigation.
 [[menu.main]]

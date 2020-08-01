@@ -101,6 +101,7 @@ orcid = "#"
 
 # Travel
 googlemaps = "#"
+tripadvisor = "#"
 ```
 
 
