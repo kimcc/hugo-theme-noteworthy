@@ -17,7 +17,7 @@
             <div>
                 <p>{{ .Summary }}</p>
                 {{ if (and (.Site.Params.showReadMore) (.Truncated)) }}
-                <p><a href="{{ .RelPermalink }}">Read more...</a></p>
+                <p><a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a></p>
                 {{ end }}
             </div>
             <div class="post-footer">
@@ -38,7 +38,7 @@
         <div class="paginator">
         {{ $paginator := .Paginator }}
         {{ if gt .Paginator.TotalPages 1 }}
-        <p>Page {{ $paginator.PageNumber}} of {{ $paginator.TotalPages }}</p>
+        <p>{{ i18n "page" }} {{ $paginator.PageNumber}} {{ i18n "of" }} {{ $paginator.TotalPages }}</p>
         <div class="paginator-group">
             {{ if $paginator.HasPrev }}
             <a class="color-link" href="{{ $paginator.Prev.URL }}">
@@ -47,13 +47,13 @@
                             <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
                             <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
                         </g>
-                </svg>  
-                Newer          
+                </svg>
+                {{ i18n "newer" }}
             </a>
             {{ end }}
             {{ if $paginator.HasNext }}
                 <a class="color-link older" href="{{ $paginator.Next.URL }}">
-                    Older
+                    {{ i18n "older" }}
                     <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
                             <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
                                 <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>

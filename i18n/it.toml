@@ -1,0 +1,23 @@
+[page]
+other = "Pagina"
+
+[of]
+other = "di"
+
+[newer]
+other = "Successivi"
+
+[older]
+other = "Precedenti"
+
+[tagged]
+other = "Contrassegnato"
+
+[read_more]
+other = "Continua a leggere..."
+
+[noteworthy_theme]
+other = "Tema Noteworthy"
+
+[built_with_hugo]
+other = "Realizzato con Hugo"
