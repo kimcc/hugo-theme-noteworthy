@@ -30,7 +30,7 @@ Refer to the [Hugo docs](https://gohugo.io/getting-started/quick-start/) for mor
 
 ## Image shortcode for large images
 
-To add images using the resize-image shortcode included with this theme, you will need to create a [Post Bundle](https://gohugo.io/content-management/organization/#page-bundles). Create a folder for your post, put your Markdown file and images inside, and rename your Markdown file `index.md`. For example: 
+To add images using the resize-image shortcode included with this theme, you will need to create a [Post Bundle](https://gohugo.io/content-management/organization/#page-bundles). Create a folder for your post, put your Markdown file and images inside, and rename your Markdown file `index.md`. For example:
 
 ```
 my-new-post
@@ -45,7 +45,7 @@ Then, you can add an image within your Markdown file by using the shortcode like
 {{< resize-image src="image1.jpg" alt="My first image" >}}
 ```
 
-Add captions like this: 
+Add captions like this:
 
 ```
 {{< resize-image src="image2.png" alt="My second image" caption="My caption" >}}
@@ -97,7 +97,11 @@ codepen = "#"
 # Academic
 googlescholar = "#"
 impactstory = "#"
-orcid = "#"  
+orcid = "#"
+
+# Travel
+googlemaps = "#"
+tripadvisor = "#"
 ```
 
 
@@ -107,10 +111,10 @@ Add your Disqus shortname and Google Analytics identifier in the `config.toml` f
 
 ```
 # Add your Disqus shortname here.
-disqusShortname = ""      
+disqusShortname = ""
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = "" 
+googleAnalytics = ""
 ```
 
 ## Ko-fi donation button
