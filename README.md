@@ -117,6 +117,20 @@ disqusShortname = ""
 googleAnalytics = ""
 ```
 
+## Utteranc.es
+
+Add following parameters to enable [Utteranc.es](https://utteranc.es):
+
+```
+[params]
+enableUtterances = true
+
+# Add the github repo for utteranc.us here:  xxx/yyy
+utteranceRepo = ""
+utteranceIssueTerm = "pathname"
+utteranceTheme = "github-light"
+```
+
 ## Ko-fi donation button
 
 If you'd like to enable a Ko-fi button on your posts, enable it in the config file and add your identifier.

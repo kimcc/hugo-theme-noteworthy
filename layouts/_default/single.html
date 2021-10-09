@@ -31,4 +31,18 @@
       {{ end }}
     </div>
 
+    {{ if .Site.Params.enableUtterances }}
+        <div id="utterance_thread">
+        <script
+            async
+            src="https://utteranc.es/client.js"
+            repo="{{ .Site.Params.utteranceRepo }}"
+            issue-term="{{ .Site.Params.utteranceIssueTerm }}"
+            theme="{{ .Site.Params.utteranceTheme }}"
+            crossorigin="anonymous"
+        >
+        </script>
+        </div>
+    {{ end }}
+
 {{end}}
