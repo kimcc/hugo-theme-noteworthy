@@ -1,0 +1,23 @@
+[page]
+other = "Página"
+
+[of]
+other = "de"
+
+[newer]
+other = "Mais recente"
+
+[older]
+other = "Mais antigo"
+
+[tagged]
+other = "Com a tag"
+
+[read_more]
+other = "Leia mais..."
+
+[noteworthy_theme]
+other = "Tema Noteworthy"
+
+[built_with_hugo]
+other = "Construído com Hugo"
