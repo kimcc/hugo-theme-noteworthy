@@ -1,0 +1,23 @@
+[page]
+other = "Page"
+
+[of]
+other = "of"
+
+[newer]
+other = "前へ"
+
+[older]
+other = "次へ"
+
+[tagged]
+other = "タグ"
+
+[read_more]
+other = "続きを読む..."
+
+[noteworthy_theme]
+other = "Noteworthy theme"
+
+[built_with_hugo]
+other = "Hugoで作成"
