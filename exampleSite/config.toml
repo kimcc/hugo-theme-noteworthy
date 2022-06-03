@@ -72,6 +72,7 @@ disqusShortname = ""
     googlescholar = "#"
     impactstory = "#"
     orcid = "#"
+    researchgate = "#"
 
     # Travel
     googlemaps = "#"
