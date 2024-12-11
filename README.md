@@ -64,6 +64,7 @@ In the `params` section of the `config.toml` file, you can add links to your soc
 email = "#"
 facebook = "#"
 twitter = "#"
+bluesky = "#"
 instagram = "#"
 tumblr = "#"
 reddit = "#"
