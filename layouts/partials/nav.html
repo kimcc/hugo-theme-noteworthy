@@ -5,7 +5,10 @@
   {{ range .Site.Menus.main }}
     <a class="color-link nav-link" href="{{ .URL }}">{{ .Name }}</a>
   {{ end }}
-  <a class="color-link nav-link" href="{{ .Site.RSSLink }}" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+  {{ $rssOutput := .OutputFormats.Get "RSS" }}
+  {{ if $rssOutput }}
+    <a href="{{ $rssOutput.Permalink }}">RSS</a>
+  {{ end }}
 </div>
 {{ partial "footer.html" . }}
 </nav>

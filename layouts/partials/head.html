@@ -29,7 +29,7 @@
     {{ with .OutputFormats.Get "RSS" }}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end }}
-    {{- if not .Site.IsServer -}}
+    {{ if not hugo.IsServer }}
       {{ template "_internal/google_analytics.html" . }}
-    {{- end -}}
+    {{ end }}
 </head>
